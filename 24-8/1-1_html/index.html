@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--Cho may tinh hieu dang su dung tai lieu html-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANDOM GAME</title>
+    <link rel="stylesheet" href="../assets/CSS/style.css">
+    <link rel="stylesheet" href="../assets/CSS/modal.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>Random game</h1>
+            <input class="restart-button" type="button" value="Reset game">
+        </header>
+
+        <div class="score">
+            <p class="score-player"></p>
+            <p class="score-computer"></p>
+        </div>
+
+        <div class="choices">
+            <i id="rock" class="choice fa fa-hand-rock-o fa-5x"></i>
+            <i id="scissors" class="choice fa fa-hand-scissors-o fa-5x"></i>
+            <i id="paper" class="choice fa fa-hand-paper-o fa-5x"></i>
+        </div>
+
+        <div class="modal">
+            <div class="modal-content">
+                <h1>You Win</h1>
+                <i class="choice fa fa-hand-rock-o fa-5x"></i>
+                <p>Computer chose rock</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/javascript/main.js"></script>
+</body>
+
+</html>
