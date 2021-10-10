@@ -237,7 +237,7 @@ body {
 .main__content .banner {
   position: relative;
   width: 100%;
-  height: 550px;
+  height: 700px;
   overflow: hidden;
   background: url(../IMAGE/background4.jpg) no-repeat;
   background-size: cover;
@@ -248,7 +248,7 @@ body {
   left: 50%;
   top: 40%;
   color: #ff722a;
-  font-size: 40px;
+  font-size: 50px;
   text-transform: uppercase;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
