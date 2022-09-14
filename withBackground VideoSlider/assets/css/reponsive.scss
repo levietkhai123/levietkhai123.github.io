@@ -1,0 +1,97 @@
+@import url(animation.css);
+@media screen and (max-width:1024px){
+    header{
+        padding: 30px 50px;
+        .logo{
+            h2{
+                font-size: 2rem;
+                text-transform:uppercase;
+                font-weight: 700;
+            }
+        }
+        .navigation{
+            background: rgba(0,0,0,0.8);
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            left: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            clip-path: circle(0% at 100% 0%);
+            
+            ul{        
+                width: 100%;
+                height: 70%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content:space-around;              
+                li::before{
+                    background: var(--text-color-2);              
+                }
+                li:hover::before{
+                    width: 100%;
+                }
+            }
+        }
+
+        .active{
+            clip-path: circle(100%);
+        }
+    
+        
+        a{
+            text-decoration: none;
+            font-size: 2rem;
+        }
+
+        .menu{    
+            display: block;
+        }
+    
+    }
+    .home{
+        .container{
+            padding: 180px 50px;
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    header{
+        padding: 30px 30px;       
+    }
+
+    .home{
+        .container{
+            width: 75%;
+            padding: 130px 50px;
+            h2{
+                font-size: 2.8rem;
+                font-weight: 800;
+            }
+            p{
+                line-height:20px;
+                margin-bottom: 40px;
+                font-size: 0.8rem;
+            }
+            .read-more{
+                padding: 5px 10px;
+            }
+        }
+        .social-network{
+            padding: 0 10px;
+            a{
+                padding: 10px 0;
+                font-size: 2.2em;
+            }
+            
+        }
+        .dot{
+            margin-top: 30px;
+        }
+        
+    }
+    
+}

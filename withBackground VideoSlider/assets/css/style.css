@@ -1,0 +1,213 @@
+@import url(color.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600;800;900&display=swap");
+@import url(animation.css);
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 200px;
+  z-index: 1;
+}
+header .logo h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+header .navigation {
+  transition: all 0.5s;
+}
+header .navigation ul {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+header .navigation ul li {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-weight: 500;
+  position: relative;
+  padding: 3px 0px;
+}
+header .navigation ul li::before {
+  content: " ";
+  background: var(--text-color-2);
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+header .navigation ul li:hover::before {
+  width: 100%;
+}
+header a {
+  text-decoration: none;
+  color: var(--text-color-2);
+}
+header .menu {
+  color: var(--text-color-2);
+  font-size: 1.8rem;
+  display: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  color: var(--text-color-2);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 0;
+}
+.home .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-clip-path: circle(0 at 50% 50%);
+          clip-path: circle(0 at 50% 50%);
+  transition: all 0.5s;
+}
+.home .active {
+  -webkit-clip-path: circle(100% at 50% 50%);
+          clip-path: circle(100% at 50% 50%);
+}
+.home .container {
+  width: 65%;
+  min-height: 100vh;
+  text-align: justify;
+  position: relative;
+  z-index: 10;
+  padding: 200px 100px;
+  display: none;
+  -webkit-animation: fadeInLeft 0.8s ease-in;
+          animation: fadeInLeft 0.8s ease-in;
+}
+.home .container h2 {
+  font-size: 5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+  z-index: 10;
+}
+.home .container span {
+  display: block;
+  font-weight: 600;
+}
+.home .container p {
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+.home .container .read-more {
+  background: var(--background-color-2);
+  color: var(--text-color-3);
+  padding: 10px 20px;
+  transition: all 0.3s;
+  text-decoration: none;
+  text-transform: capitalize;
+  opacity: 0.8;
+}
+.home .container .read-more:hover {
+  opacity: 1;
+}
+.home .active {
+  display: block;
+}
+.home .social-network {
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  z-index: 10;
+  padding: 0 30px;
+}
+.home .social-network a {
+  padding: 10px 0;
+  font-size: 2.5em;
+  color: var(--text-color-2);
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+.home .social-network a:hover {
+  opacity: 1;
+  transform: scale(1.3);
+}
+.home .dot {
+  z-index: 10;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home .dot ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .dot-item {
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  display: block;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.home .dot-item:not(:last-child) {
+  margin-right: 10px;
+}
+.home .dot-item:hover {
+  transform: scale(1.3);
+}
+.home .dot .active {
+  background: var(--text-color-3);
+  border: 1px solid var(--text-color-2);
+  transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.home::after {
+  content: " ";
+  background: var(--background-color);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+@-webkit-keyframes animation {
+  0% {
+    margin-left: -200px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes animation {
+  0% {
+    margin-left: -200px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}/*# sourceMappingURL=style.css.map */

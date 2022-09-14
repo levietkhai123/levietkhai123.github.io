@@ -1,0 +1,82 @@
+@import url(animation.css);
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 30px 50px;
+  }
+  header .logo h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  header .navigation {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    -webkit-clip-path: circle(0% at 100% 0%);
+            clip-path: circle(0% at 100% 0%);
+  }
+  header .navigation ul {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  header .navigation ul li::before {
+    background: var(--text-color-2);
+  }
+  header .navigation ul li:hover::before {
+    width: 100%;
+  }
+  header .active {
+    -webkit-clip-path: circle(100%);
+            clip-path: circle(100%);
+  }
+  header a {
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  header .menu {
+    display: block;
+  }
+  .home .container {
+    padding: 180px 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    padding: 30px 30px;
+  }
+  .home .container {
+    width: 75%;
+    padding: 130px 50px;
+  }
+  .home .container h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+  }
+  .home .container p {
+    line-height: 20px;
+    margin-bottom: 40px;
+    font-size: 0.8rem;
+  }
+  .home .container .read-more {
+    padding: 5px 10px;
+  }
+  .home .social-network {
+    padding: 0 10px;
+  }
+  .home .social-network a {
+    padding: 10px 0;
+    font-size: 2.2em;
+  }
+  .home .dot {
+    margin-top: 30px;
+  }
+}/*# sourceMappingURL=reponsive.css.map */

@@ -1,0 +1,47 @@
+@media screen and (max-width: 1024px) {
+  header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    z-index: 1;
+  }
+  header .logo h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  header .navigation ul {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+  }
+  header .navigation ul li {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: 500;
+    position: relative;
+    padding: 3px 0px;
+  }
+  header .navigation ul li::before {
+    content: " ";
+    background: var(--text-color-2);
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s;
+  }
+  header .navigation ul li:hover::before {
+    width: 100%;
+  }
+  header a {
+    text-decoration: none;
+    color: var(--text-color-2);
+  }
+}/*# sourceMappingURL=reposive.css.map */
